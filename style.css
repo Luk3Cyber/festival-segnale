@@ -3,12 +3,12 @@
 
 /* Scelte comuni: ogni regola usa var() per richiamarne il valore. */
 :root {
-  --colore-primario: #245c49;
-  --colore-primario-scuro: #173f32;
+  --colore-primario: #243b5c;
+  --colore-primario-scuro: #171a3f;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
-  --font-testo: Arial, Helvetica, sans-serif;
-  --font-titoli: Georgia, "Times New Roman", serif;
+  --font-testo: Arial;
+  --font-titoli: Georgia;
 }
 
 * {
@@ -159,7 +159,7 @@ h3 {
 .event-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .event-card {
@@ -212,4 +212,10 @@ h3 {
   .event-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+@media (min-width: 1024px) {
+  .event-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 }
